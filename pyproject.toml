@@ -1,7 +1,7 @@
 [project]
 name = "openadobe"
 version = "0.1.0"
-description = "Agent-operated video/audio post-production on real engines (MLT, Blender, Ardour)."
+description = "Real post-production, operated by agents: editing, compositing and mixing on real engines (MLT, Blender, Ardour)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"

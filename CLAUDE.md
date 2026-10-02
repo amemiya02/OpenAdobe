@@ -1,11 +1,11 @@
 # OpenAdobe
 
-Agent-operated post-production on real engines. Read `docs/ARCHITECTURE.md` first (decisions §1.1–1.2).
+Real post-production, operated by agents. Read `docs/ARCHITECTURE.md` first (decisions §1.1–1.2).
 
 - Python 3.12 via uv: `uv sync --extra asr --extra mcp --extra otio --extra analysis`
 - Engines run in Docker image `openadobe/engines:dev` (`docker/engines.Dockerfile`); `uv run openadobe doctor --build`
 - Tests: `uv run pytest -m "not engine"` (fast) / `uv run pytest` (needs the image; ~15 min incl. Blender/Ardour)
-- Acceptance runs: `examples/talking_head_demo.sh [workdir]` (P0) and `examples/full_showcase.sh [workdir]` (P1–P3, ~10 min);
+- End-to-end demos: `examples/talking_head_demo.sh [workdir]` and `examples/full_showcase.sh [workdir]` (~10 min);
   both use macOS `say` for the voice-over
 
 Rules

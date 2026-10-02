@@ -6,7 +6,7 @@ Pipeline (all inside the version-locked engine image):
                                                  -> PNG RGBA16 sequence + <out>.blend
     ffmpeg PNG sequence -> FFV1 gbrap10le .mkv (MLT composites its alpha; it flattens ProRes 4444)
 
-Renderer choice (measured, see tests/test_blender.py and the T9 report): EEVEE Next does start under
+Renderer choice (measured; see tests/test_blender.py): EEVEE Next does start under
 xvfb + llvmpipe (OpenGL 4.3) but is unusable (about 85 s of shader compilation, then ~0.5 s per sample
 for an empty 640x360 frame). Cycles CPU works (no OpenImageDenoise in this build, so low sample counts
 and noise-friendly lighting); the keying and glow templates are pure compositor trees.

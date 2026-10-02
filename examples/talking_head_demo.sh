@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# P0 acceptance: 口播粗剪 + 字幕 + BGM 闪避 → mp4 + 自动 QC, driven only through the CLI
+# Talking-head demo: 口播粗剪 + 字幕 + BGM 闪避 → mp4 + 自动 QC, driven only through the CLI
 # (exactly what an agent would call). Needs macOS `say` for the synthetic voice-over.
 #
 #   examples/talking_head_demo.sh [WORKDIR]

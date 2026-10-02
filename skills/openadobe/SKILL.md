@@ -1,6 +1,6 @@
 ---
 name: openadobe
-description: Edit real video/audio projects at Premiere/After Effects/Audition level with the OpenAdobe CLI/MCP on real engines (MLT, Blender, Ardour, ffmpeg): cutting, transitions, effects, speed, captions, motion graphics, keying, audio repair, mixing, loudness, vertical reframes, beat montages, QC and review. Use for 剪辑口播/vlog/访谈/短视频、加字幕/标题/包装、配BGM、去停顿口误、降噪修音、混音、竖屏重构、卡点、成片审查. Not for generating video with code.
+description: Edit, composite and mix real video/audio projects with the OpenAdobe CLI/MCP on real engines (MLT, Blender, Ardour, ffmpeg): cutting, transitions, effects, speed, captions, motion graphics, keying, audio repair, mixing, loudness, vertical reframes, beat montages, QC and review. Use for 剪辑口播/vlog/访谈/短视频、加字幕/标题/包装、配BGM、去停顿口误、降噪修音、混音、竖屏重构、卡点、成片审查. Not for generating video with code.
 ---
 
 # OpenAdobe editing playbook

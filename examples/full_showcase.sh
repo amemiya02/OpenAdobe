@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# P1–P3 acceptance: one agent session, CLI only, real engines.
+# Full showcase: one agent session, CLI only, real engines.
 #   host interview (noisy, with pauses and a flub) → repair → silence/flub cuts → punch-in → captions
 #   → Lottie lower third + Blender 3D title → dip to a beat-synced b-roll montage with a Blender green-screen
 #   comp → ducking → Ardour mix → 16:9 master + 9:16 Short (subject-following) → QC → review package.

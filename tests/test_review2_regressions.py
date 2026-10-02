@@ -1,4 +1,4 @@
-"""Regressions for defects found in the P1–P4 review."""
+"""Regressions for defects found in the second review."""
 
 from __future__ import annotations
 
