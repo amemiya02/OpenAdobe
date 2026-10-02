@@ -1,0 +1,35 @@
+[project]
+name = "openadobe"
+version = "0.1.0"
+description = "Agent-operated video/audio post-production on real engines (MLT, Blender, Ardour)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["pydantic>=2.9"]
+
+[project.optional-dependencies]
+asr = ["faster-whisper>=1.1"]
+mcp = ["mcp>=1.2"]  # 2.x preferred (MCPServer); 1.x FastMCP still supported
+otio = ["opentimelineio>=0.17"]
+analysis = ["numpy>=1.26", "librosa>=0.10", "opencv-python-headless>=4.9", "onnxruntime>=1.18"]
+
+[project.scripts]
+openadobe = "openadobe.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "numpy>=1.26"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openadobe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["engine: needs the openadobe/engines Docker image"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
